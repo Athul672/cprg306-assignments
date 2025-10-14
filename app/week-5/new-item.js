@@ -3,11 +3,10 @@
 import { useState } from "react";
 
 export default function NewItem() {
-  const [name, setName] = useState(""); // name field
-  const [quantity, setQuantity] = useState(1); // from week 4
-  const [category, setCategory] = useState("produce"); // category field
+  const [name, setName] = useState(""); 
+  const [quantity, setQuantity] = useState(1); 
+  const [category, setCategory] = useState("produce"); 
 
-  // Increment & decrement handlers (same as Week 4)
   const increment = () => {
     if (quantity < 20) {
       setQuantity(quantity + 1);
@@ -20,7 +19,6 @@ export default function NewItem() {
     }
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -36,7 +34,6 @@ export default function NewItem() {
       `Item Added:\nName: ${name}\nQuantity: ${quantity}\nCategory: ${category}`
     );
 
-    // Reset form fields
     setName("");
     setQuantity(1);
     setCategory("produce");
@@ -47,7 +44,6 @@ export default function NewItem() {
       <h2 className="text-2xl font-bold mb-4 text-center">Add a New Item</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        {/* Name Field */}
         <div>
           <label className="block font-semibold mb-1">Name:</label>
           <input
@@ -60,7 +56,6 @@ export default function NewItem() {
           />
         </div>
 
-        {/* Quantity Section */}
         <div>
           <label className="block font-semibold mb-1">Quantity:</label>
           <div className="flex items-center gap-4">
@@ -94,7 +89,6 @@ export default function NewItem() {
           </div>
         </div>
 
-        {/* Category Field */}
         <div>
           <label className="block font-semibold mb-1">Category:</label>
           <select
@@ -116,7 +110,6 @@ export default function NewItem() {
           </select>
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded"
