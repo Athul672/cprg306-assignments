@@ -1,14 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import StudentInfo from "./student-info";
 
-
-export default function Home(){
-    return (
-        <div>
-            <h1>CPRG306: Web Development 2 -Assignments</h1>
-            <Link href={"/week-2"}>Go to week-2 Page</Link>
-            <Link href={"/Week-3"}>Go to week-3 page</Link>
-        </div>
-    )
+export default function Week2() {
+  return (
+    <main className="max-w-md mx-auto bg-gray-100 min-h-screen p-6 rounded-xl shadow-md">
+      <h1 className="text-3xl font-bold text-center mb-6 text-blue-700">
+        Shopping List
+      </h1>
+      <StudentInfo/>
+    </main>
+  );
 }
+

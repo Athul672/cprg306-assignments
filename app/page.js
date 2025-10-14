@@ -1,4 +1,10 @@
+"use client";
+import React, { use } from "react";
+import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+
+
 
 export default function Home() {
   return (
@@ -24,6 +30,24 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+          <div className="text-center">
+    <h1 className="text-2xl font-bold mb-4">CPRG306: Web Development 2 - Assignments</h1>
+    <nav className="flex flex-col gap-2">
+      <Link href="/week-2" className="text-blue-600 underline hover:text-blue-800">
+        Go to week-2 Page
+      </Link>
+      <Link href="/week-3" className="text-blue-600 underline hover:text-blue-800">
+        Go to week-3 page
+      </Link>
+      <Link href="/week-4" className="text-blue-600 underline hover:text-blue-800">
+        Go to week-4 page
+        </Link>
+         <Link href="/week-5" className="text-blue-600 hover:text-blue-800">
+        Go to week-5 page  
+          </Link>
+        </nav>
+  </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
