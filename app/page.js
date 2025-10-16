@@ -1,8 +1,8 @@
 "use client";
-import React, { use } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+
 
 
 
@@ -47,6 +47,7 @@ export default function Home() {
         Go to week-5 page  
           </Link>
           <Link href="/week-6" className="text-blue-600 hover:text-blue-800">
+          Go to week-6 page
           </Link>
           
           </nav>
