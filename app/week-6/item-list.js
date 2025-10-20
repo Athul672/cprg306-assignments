@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Item from "./item";
-import itemsData from "./items.json";
+import itemsData from "./item.json";
 
 function ItemList() {
   const [items, setItems] = useState(itemsData);
