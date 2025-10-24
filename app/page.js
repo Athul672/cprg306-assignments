@@ -49,7 +49,9 @@ export default function Home() {
           <Link href="/week-6" className="text-blue-600 hover:text-blue-800">
           Go to week-6 page
           </Link>
-          
+          <Link href="/week-7" className="text-blue-600 hover:text-blue-800">
+          Go to week-7 page
+          </Link>
           </nav>
   </div>
 
